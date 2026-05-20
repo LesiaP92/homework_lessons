@@ -4,6 +4,8 @@ name = input("Ім`я вашої змінної?:")
 valid = True
 if len (name) == 0:
     valid = False
+elif name[0].isdigit():
+    valid = False
 elif not name.islower() and not name == "_":      #не може містити великі літери
     for char in name:            #перевірка на великі літери з тимчас змінною
         if char.isupper():       # якшо є велика літера то false
