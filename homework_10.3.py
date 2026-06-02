@@ -1,5 +1,5 @@
 def is_even(digit):
-    if digit % 2 ==0:
+    if digit % 2 ==0: # %- шукає залишок від діленння числа на 2
         return True
     else:
         return False
